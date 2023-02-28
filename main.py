@@ -35,9 +35,9 @@ with open("creds.yml") as file:
     logging.debug(f"Got the cred data.")
     
 msg = template.render(msg_data)
-logging.debug(f"Rendered the template: {msg}")
+logging.debug(f"Rendered the template:\n---\n{msg}\n---")
     
 masto_conn = Mastodon(access_token=creds_data['token'], api_base_url=creds_data['base_url'])
-logging.debug(f"The Mastodon connection: {dict(masto_conn)}")
+logging.debug(f"The Mastodon connection: {masto_conn}")
 
 # masto_conn.toot(msg)
