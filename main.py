@@ -18,7 +18,7 @@ def get_spoiler():
 logging.basicConfig(
     filename=LOG_FILE,
     format=LOG_FORMAT,
-    level=logging.INFO
+    level=logging.DEBUG
 )
 
 msg_data = {}
@@ -51,3 +51,4 @@ logging.debug(f"The Mastodon connection: {masto_conn}")
 # toot_result = masto_conn.toot(msg)
 toot_result = masto_conn.status_post(msg, spoiler_text=get_spoiler())
 logging.info(toot_result)
+logging.debug(f"Posted message {toot_result['id']}")
