@@ -1,3 +1,4 @@
-* Updated `README.md`
+* Added spoiler
 
-* Added `requirements.txt`
+If 'spoiler' exists in `presenter.yml`, then use that text as the spoiler. If it doesn't exists, then don't hide the post.
+

@@ -8,10 +8,17 @@ TEMPLATE_FILE = "post_template.j2"
 LOG_FILE = "output.log"
 LOG_FORMAT = "%(asctime)s - %(levelname)s - %(message)s"
 
+def get_spoiler():
+# Get the spoiler text
+    if 'spoiler' not in msg_data['presenter'].keys():
+        return None
+    return msg_data['presenter']['spoiler']
+
+
 logging.basicConfig(
     filename=LOG_FILE,
     format=LOG_FORMAT,
-    level=logging.DEBUG
+    level=logging.INFO
 )
 
 msg_data = {}
@@ -36,8 +43,11 @@ with open("creds.yml") as file:
     
 msg = template.render(msg_data)
 logging.debug(f"Rendered the template:\n---\n{msg}\n---")
-    
+
+
 masto_conn = Mastodon(access_token=creds_data['token'], api_base_url=creds_data['base_url'])
 logging.debug(f"The Mastodon connection: {masto_conn}")
 
-# masto_conn.toot(msg)
+# toot_result = masto_conn.toot(msg)
+toot_result = masto_conn.status_post(msg, spoiler_text=get_spoiler())
+logging.info(toot_result)
