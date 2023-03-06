@@ -40,7 +40,7 @@ This is the Jinja2 template for the message formatting. This is what you'll upda
 
 The default format sends the message, the name and online presence of the presenter, and the event hashtags.
 
-`YOUR MESSAGE HERE
+```YOUR MESSAGE HERE
 
 Presenter A can be found at @presenterA@twitter.com
-#hashtag1 #hashtag2 #hashtag3
+#hashtag1 #hashtag2 #hashtag3```
