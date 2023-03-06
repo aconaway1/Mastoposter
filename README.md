@@ -4,7 +4,6 @@ This is a script to post updates to Mastodon while attending Tech Field Day even
 updates while an event is going on.
 
 ## Usage
-
 `python main.py "YOUR MESSAGE HERE"`
 
 You can change the format of the update by modifying the `post_template.j2` file.
@@ -40,7 +39,9 @@ This is the Jinja2 template for the message formatting. This is what you'll upda
 
 The default format sends the message, the name and online presence of the presenter, and the event hashtags.
 
-`YOUR MESSAGE HERE
+```
+YOUR MESSAGE HERE
 
 Presenter A can be found at @presenterA@twitter.com
-#hashtag1 #hashtag2 #hashtag3`
+#hashtag1 #hashtag2 #hashtag3
+```
