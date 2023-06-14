@@ -1,3 +1,4 @@
 creds.yml
 .idea/*
 *.log
+docker/db_init.txt
