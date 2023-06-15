@@ -1,4 +1,4 @@
-# TFD-Poster
+# Mastoposter
 ## Summary
 This is a script to post updates to Mastodon while live-Tooting streaming events. It's very, very simple, but this will help keep a consistent format to any updates while an event is going on.
 

@@ -4,6 +4,9 @@ Posts a status update to Mastodon using a jinja2 template and data taken from YA
 This script is targeted to be used during streaming events where lots of posts are made.
 The idea is that each post is consistent and includes accurate tags and links as well
 as your comments.
+
+NOTE: I am a network engineer and not a developer. I think my code is improving, but, 
+for the love of $deity, do not assume that the way I do it is best practice!
 """
 import argparse
 import logging
