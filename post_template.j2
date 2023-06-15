@@ -1,4 +1,5 @@
-{{ msg }}
+{{ msg }}{% if presenter is defined %}
 
-{{ presenter['name'] }} can be found at {{ presenter['where']}}.
-{% for tag in event['tags'] %}#{{ tag }} {% endfor %}
+{{ presenter['name'] }} can be found at {{ presenter['where']}}.{% endif %}{% if event is defined %}
+
+{% for tag in event['tags'] %}#{{ tag }} {% endfor %}{% endif %}
