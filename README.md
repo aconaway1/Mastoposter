@@ -13,7 +13,7 @@ Clone the repo to your machine.
 
 CD into the `Mastoposter` directory.
 
-You can use the `requirements.txt` to install what you need. I would suggest doing so in a virtual environment.
+You can use the `requirements.txt` to install the Python packages you need. I would suggest doing so in a virtual environment.
 
 `pip install -r requirements.txt`
 
