@@ -1,5 +1,7 @@
 # Mastoposter
 ## Summary
+First and foremost, I am a network engineer. I am not a developer, so my code is terrible.
+
 This is a script to post updates to Mastodon while live-Tooting streaming events. It's very, very simple, but this will help keep a consistent format to any updates while an event is going on.
 
 For each event, you update the `event.yml` file with the proper information, and, as each presenter appears, update the `presenter.yml` file with their information. When you Toot, the message will be consistent and accurate based on the Jinja2 template. 
@@ -92,7 +94,22 @@ Presenter A can be found at @presenterA@somemastodoninstance
 ```
 
 ## Notes
+The code sends a dictionary to the Jinja2 system to use with the template. That is structured like this.
 
+```
+msg: str
+event:
+  name: str
+  url: str
+  tags:
+    - str
+    - str
+    ...
+presenter:
+  name: str
+  where: str
+  cw: str
+```
 
 ## Contact
 
