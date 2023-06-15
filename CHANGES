@@ -1,8 +1,1 @@
-- Added argument parsing
-    - Add a content warning to the toot
-    - Don't add the presenter info in the toot
-    - Don't add the event info in the toot (at this time, only hashtags)
-    - Ignore the template altogether and just send text
-- Updated template so it doesn't error out when presenter, tags, etc., aren't send to be rendered
-- Linted
-- Updated README.md
+- Adding details to the README.md

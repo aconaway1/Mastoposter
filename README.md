@@ -6,6 +6,26 @@ For each event, you update the `event.yml` file with the proper information, and
 
 See file section below for details on the YAML files. Pay specific attention to `creds.yml` to make sure you can post to your account.
 
+## Setup
+Clone the repo to your machine.
+
+`git clone https://github.com/aconaway1/Mastoposter.git`
+
+CD into the `Mastoposter` directory.
+
+You can use the `requirements.txt` to install what you need. I would suggest doing so in a virtual environment.
+
+`pip install -r requirements.txt`
+
+You need to create a creds file with the proper info to post to your account. Just create the file in the directory and add something like this.
+
+```
+token: MYTOKEN
+base_url: mymastodon.instance
+```
+
+That should be it.
+
 ## Usage
 ### Simple
 `python main.py "YOUR MESSAGE HERE"`
@@ -72,6 +92,7 @@ Presenter A can be found at @presenterA@somemastodoninstance
 ```
 
 ## Notes
+
 
 ## Contact
 
